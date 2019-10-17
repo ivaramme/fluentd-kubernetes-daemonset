@@ -102,6 +102,8 @@ gem "fluent-plugin-kinesis"
 <% end %>
 <% when "splunkhec" %>
 gem "fluent-plugin-splunk-enterprise"
+<% when "loganalytics" %>
+gem "fluent-plugin-azure-loganalytics"
 <% end %>
 <% if is_v1 %>
 gem "fluent-plugin-kubernetes_metadata_filter", "~> 2.3.0"
